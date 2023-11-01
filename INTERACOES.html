@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	
+  </head>
+  <body>
+  	<!-- body code goes here -->
+
+	  
+	  	<div> <h1><b>PESSOAS DEIXANDO COISAS CAIR </b></h1> <p style="font-size: 60px;" id="num_up">1</p></div>
+  <script>
+		function animateValue(id){
+    var obj = document.getElementById(id);
+    var current = parseInt(obj.innerHTML);
+    setInterval(function(){
+        current++;
+        // Update the contents of the element
+        obj.innerHTML = current;
+    },1000);
+}
+
+animateValue('num_up');
+	</script>
+	  
+	  
+	  
+	  
+	  
+	  
+	  	  	<div> <h1><b>PESSOAS DEIXANDO COISAS CAIR </b></h1> <p style="font-size: 60px;" id="num_up_2">1</p></div>
+  <script>
+		function animateValue(id){
+    var obj = document.getElementById(id);
+    var current = parseInt(obj.innerHTML);
+    setInterval(function(){
+        current++;
+        // Update the contents of the element
+        obj.innerHTML = current;
+    },10);
+}
+
+animateValue('num_up_2');
+	</script>
+	  
+	  
+	  
+	  
+	  
+	  	  	  	<div> <h1><b>PESSOAS DEIXANDO COISAS CAIR </b></h1> <p style="font-size: 60px;" class="num_up_3">1</p></div>
+  <script>
+                $(function(){
+                    //Get Current HTML
+                    var currentValue = $("#num_up_3").html();
+
+                    //do this every 1000 ms (1 second)
+                    setInterval(function(){
+                        //add the value to the current
+                        var newValue = currentValue++
+                        // print the new value
+                        $("#num_up_3").html(newValue);
+
+                    },1000)
+                })
+	</script>
+	  
+	  
+	  	  	  	<div> <h1><b>PESSOAS DEIXANDO COISAS CAIR </b></h1> <p style="font-size: 60px;" id="num_down_4">1</p></div>
+  <script>
+		function animateValue(id){
+    var obj = document.getElementById(id);
+    var current = parseInt(obj.innerHTML);
+    setInterval(function(){
+        current--;
+        // Update the contents of the element
+        obj.innerHTML = current;
+    },10);
+}
+
+animateValue('num_down_4');
+	</script>
+	  
+	  
+	  
+	  	  	  	  	<div> <h1><b>CAINDO</b></h1> <p style="font-size: 60px;" id="words_up"></p></div>
+  <!-- <script>
+		function animateValue(id){
+    var obj = document.getElementById(id);
+    var current = parseInt(obj.innerHTML);
+    setInterval(function(){
+        current--;
+        // Update the contents of the element
+		obj.innerHTML += '<br>CAINDO</br>';
+    },1000);
+}
+
+animateValue('words_up');
+	</script> -->
+	 
+	  
+	  	<div> <h1><b>PESSOAS DEIXANDO COISAS CAIR </b></h1> <p style="font-size: 60px;" id="countdown"></p></div>
+  <script>
+			  var count=0;
+var ms = 200;
+var step = 5;
+var counter=setTimeout(timer, ms); //1000 will  run it every 1 second
+
+function timer()
+{
+  count=count+1;
+
+    //Do code for showing the number of seconds here
+     document.getElementById("countdown").innerHTML=count ; // watch for spelling
+     ms = ms - step;
+     counter = setTimeout(timer, ms);
+
+  
+
+}
+	</script>
+	  
+	  
+	  
+	    
+	  	<div> <h1><b>PESSOAS DEIXANDO COISAS CAIR countdown2 </b></h1> <p style="font-size: 60px;" id="countdown2">1</p></div>
+  <script>
+			  var count=0;
+var ms = 200;
+var step = 2;
+var counter=setTimeout(timer, ms); //1000 will  run it every 1 second
+
+function timer()
+{
+  count=count+1;
+
+    //Do code for showing the number of seconds here
+     document.getElementById("countdown2").innerHTML=count ; // watch for spelling
+     ms = ms - step;
+     counter = setTimeout(timer, ms);
+
+  
+
+}
+	</script>
+	  
+	  
+	  
+	  
+
+	  
+	  
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
